@@ -3,14 +3,12 @@ const path = require("path");
 const connectToDatabase = require("./database/dbConfig");
 const noteRoutes = require("./routes/index");
 const errorMiddleware = require("./middlewares/error");
-const cors = require("cors");
+const helmet = require('helmet');
 
 const app = express();
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-
-app.use(cors());
-
+app.use(helmet());
 app.use(noteRoutes);
 
 app.use("*", (req, res) => {
