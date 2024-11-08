@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #fff;
+  background: #000;
+}
+
+.App {
+  max-width: 728px;
+  margin: 4rem auto;
+}
+
+.App > h1 {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.Card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1d2125;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #333333;
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.Card--text h1 {
+  color: #388bff;
+}
+
+.Card--button button {
+  background: #f5f6f7;
+  padding: 0.4rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.Card--button button:hover {
+  border: none;
+  background-color: #cc3000;
+  color: #ffffff;
+}
+
+.Card--button__delete {
+  border: none;
+  color: #ca0000;
+  border-radius: 10px;
+}
+
+.Card--button__done {
+  border: 1px solid #388bff;
+  color: #388bff;
+  margin-right: 1rem;
+}
+
+.Form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #444;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
+.Form > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.Form input {
+  background: #f5f6f7;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  display: block;
+  margin: 0.3rem 1rem 0 0;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+.Form button {
+  background: #388bff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  margin-top: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+button:disabled,
+button[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+  text-decoration: line-through;
+}
+
+.line-through {
+  text-decoration: line-through;
+  color: #777 !important;
+}
+
+.hide-button {
+  display: none;
+}
